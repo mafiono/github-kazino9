@@ -37,27 +37,27 @@ class GamePlay extends React.Component {
               var messageEvent = eventMethod === "attachEvent" ? "onmessage" : "message";
               eventer(messageEvent, function (e) {
                   switch (e.data.action) {
-                    //   case "game.loaded":
-                    //       // Game successfully loaded.
-                    //       break;
-                    //   case "game.balance.changed":
-                    //       // Game Balance changed.
-                    //       break;
-                    //   case "game.cycle.started":
+                       case "game.loaded":
+                           // Game successfully loaded.
+                           break;
+                       case "game.balance.changed":
+                           // Game Balance changed.
+                           break;
+                       case "game.cycle.started":
                     //       // Ticket placing...
-                    //       break;
-                    //   case "game.cycle.end":
+                           break;
+                       case "game.cycle.end":
                     //       // Ticket placed
-                    //       break;
-                    //   case "game.goto.home":
+                           break;
+                       case "game.goto.home":
                     //       //Game has to be redirected to the home lobby page.(exit)
-                    //       break;
-                    //   case "game.goto.history":
+                           break;
+                       case "game.goto.history":
                     //       // History modal opens
-                    //       break;
-                    //   case "game.resize.height":
+                           break;
+                       case "game.resize.height":
                     //       // iframe height should be: e.data.value;
-                    //     //   document.getElementById("myIdiframe").style.height = e.data.value;
+                       document.getElementById("myIdiframe").style.height = e.data.value;
                     //       break;
                       case "game.get.clientrect":
                           // iframe selector.
@@ -147,9 +147,9 @@ class GamePlay extends React.Component {
                                             <CardHeader>
                                                 <Row className='w-100 m-1'>
                                                     <Col style={{textAlign: 'left'}} className="d-flex align-items-center flex-1 justify-content-start" md="3" sm="3" xs="3">
-                                                        {/* <span style={{color:'white'}}>
+                                                         <span style={{color:'white'}}>
                                                             {gamedata.NAME}
-                                                        </span> */}
+                                                        </span>
                                                     </Col>
                                                     <Col md="6" sm="6" xs="6" />
                                                     <Col style={{textAlign: 'right'}} className="d-flex align-items-center flex-1 justify-content-end" md="3" sm="3" xs="3">
@@ -184,9 +184,9 @@ class GamePlay extends React.Component {
                                             <CardHeader>
                                                 <Row className='w-100 m-1'>
                                                     <Col style={{textAlign: 'left'}} className="d-flex align-items-center flex-1 justify-content-start" md="3" sm="3" xs="3">
-                                                        {/* <span style={{color:'white'}}>
+                                                        <span style={{color:'white'}}>
                                                             {gamedata.NAME}
-                                                        </span> */}
+                                                        </span>
                                                     </Col>
                                                     <Col md="6" sm="6" xs="6" />
                                                     <Col style={{textAlign: 'right'}} className="d-flex align-items-center flex-1 justify-content-end" md="3" sm="3" xs="3">
@@ -221,9 +221,9 @@ class GamePlay extends React.Component {
                                             <CardHeader>
                                                 <Row className='w-100 m-1'>
                                                     <Col style={{textAlign: 'left'}} className="d-flex align-items-center flex-1 justify-content-start" md="3" sm="3" xs="3">
-                                                        {/* <span style={{color:'white'}}>
+                                                        <span style={{color:'white'}}>
                                                             {gamedata.NAME}
-                                                        </span> */}
+                                                        </span>
                                                     </Col>
                                                     <Col  className="" md="6" sm="6" xs="6" />
                                                     <Col style={{textAlign: 'right'}} className="d-flex align-items-center flex-1 justify-content-end" md="3" sm="3" xs="3">
